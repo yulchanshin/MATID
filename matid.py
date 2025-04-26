@@ -1,4 +1,10 @@
 import os
+
+if not os.path.exists("best.pt"):
+    import urllib.request
+    url = "https://drive.google.com/uc?id=1ETP6JcrGr5qGATz3Y3xNk_fy7OKinDTx"
+    urllib.request.urlretrieve(url, "best.pt")
+
 import sys
 sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 
